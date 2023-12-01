@@ -16,6 +16,13 @@ function SportsCar(make,model,topSpeed)
     this.topSpeed = topSpeed;
 }
 
+// Inherit the Car prototype in the SportsCar prototype
+SportsCar.prototype = Object.create(Car.prototype);
+
+// Set the constructor property back to SportsCar
+SportsCar.prototype.constructor = SportsCar;
+
+
 // Do not change the code below
 window.Car = Car;
 window.SportsCar = SportsCar;
