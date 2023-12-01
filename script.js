@@ -22,6 +22,10 @@ SportsCar.prototype = Object.create(Car.prototype);
 // Set the constructor property back to SportsCar
 SportsCar.prototype.constructor = SportsCar;
 
+SportsCar.prototype.getTopSpeed = function () {
+  return this.topSpeed;
+};
+
 
 // Do not change the code below
 window.Car = Car;
